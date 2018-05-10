@@ -1,0 +1,13 @@
+#配置数据源
+spring:
+  datasource:
+     url: jdbc:mysql://127.0.0.1:3306/mydemo?useUnicode=true&characterEncoding=UTF-8
+     username: root
+     password: 8866521
+     driver-class-name: com.mysql.jdbc.Driver
+     type: com.alibaba.druid.pool.DruidDataSource
+
+#指定mybatis映射文件的地址
+mybatis:
+  typeAliasesPackage: com.entity
+  mapper-locations: classpath:mapper/*.xml
